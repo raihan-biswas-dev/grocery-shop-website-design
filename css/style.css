@@ -1,0 +1,1092 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6,p,a{
+    line-height:0.8;
+}
+
+body {
+    position: relative;
+  }
+  
+/*======================== side bar css goes here =================*/
+.sidebar{
+    width:200px;
+    height:100%;
+    background-color: rgba(0, 148, 50,0.8);
+    position: fixed;
+    top:110px;
+    right:-200px;
+    z-index: 9999999;
+    text-align: center;
+    transition: all linear .3s;
+}
+
+.side-logo{
+    padding-bottom: 20px;
+}
+.side-logo img{
+    margin-top: 60px;
+    width: 100px;
+   
+}
+
+.sidebar a{
+    display: block;
+    line-height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    transition: all linear .3s;
+    text-transform: capitalize;
+    border-top: 1px solid #fff;
+}
+
+.sidebar a:hover{
+    color: #F79F1F;
+    background-color: #ffffff;
+}
+
+.social-side-bar{
+    padding-top: 30px;
+}
+.social-side-bar i{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    color: #F79F1F;
+    cursor: pointer;
+}
+
+.sideopen{
+    right: 0;
+}
+
+.side-click{
+    width: 30px;
+    height: 30px;
+    background-color: #44bd32;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    transition: all linear .3s;
+    cursor:pointer;
+}
+
+.sideopen2{
+    left:170px;
+}
+/*======================== nav bar css goes here =================*/
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all linear .3s;
+    line-height: 110px;
+    position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active{
+    color: rgb(8, 233, 0);
+}
+.navbar-expand-lg .navbar-nav .nav-link::before{
+    position: absolute;
+    content:'';
+    width: 0;
+    height: 2px;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #7fd142;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.navbar-expand-lg .navbar-nav .nav-link::after{
+    position: absolute;
+    content:'';
+    width: 0;
+    height: 2px;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #7fd142;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover::before{
+    opacity: 1;
+    width: 100%;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover::after{
+    opacity: 1;
+    width: 100%;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #7fd142;
+}
+.navbar-expand-lg .navbar-nav .nav-item {
+	padding-left: 20px;
+}
+
+#nav-bar form input{
+   border: 0;
+}
+#nav-bar form button{
+  border: 0;
+  margin-left: 10px;
+  background-color: #2faa1c;
+  color: #000;
+}
+
+#nav-bar form button:hover{
+    background-color: rgb(15, 155, 3);
+    color: #fff;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+	padding-top: 0;
+	padding-bottom: 0;
+    border-bottom: 1px solid rgb(23, 73, 23);
+    z-index: 99999;
+    
+}
+
+form btn{
+    margin-top: 0;
+    color: #fff;
+}
+
+.bg{
+    background-color: #222f3e;
+}
+/*======================== banner css goes here =================*/
+.banner-item{
+    background-position: center;
+    background-size: cover!important;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.banner-item::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.banner-content{
+    position: relative;
+    height: 100vh;
+    z-index: 99999;
+}
+
+.content h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.content p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+
+.btn1{
+    padding: 15px 30px;
+    background-color: #145A32;
+    box-shadow: inset 0 0 0 0 #44bd32;
+    border-radius: 4px;
+    border: 0;
+    transition: ease-out 0.4s;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.btn1:hover{
+    box-shadow: inset 300px 0 0 0 #44bd32;
+    color: #000;
+}
+
+/*======================== About us css goes here =================*/
+#aboutus{
+    padding-top: 50px;
+}
+
+.comon-head{
+    margin-bottom: 30px;
+}
+
+.about-img{
+    margin-left: 10px;
+}
+
+.about-text{
+    margin-left: 24px;
+}
+.comon-head h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #444;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.comon-head h3::before{
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 8px;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    background: url(../images/before.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.comon-head h3::after{
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 8px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: url(../images/after.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.comon-head p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #444;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-head h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: #444;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+.about-head h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #444;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+.about-head p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #444;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: capitalize;
+}
+
+.btn2{
+   margin-top: 15px;
+   float: left;
+   padding: 15px 30px;
+   border-radius: 0;
+   background-color: rgb(23, 73, 23);
+   color: #fff;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 16px;
+   text-transform: capitalize;
+   box-shadow: inset 0 0 0 0 #1c720f;
+   transition: all linear 0.3s;
+}
+
+
+
+.abt-head{
+    text-align: left;
+}
+
+.abt-details{
+    text-align: left;
+}
+
+@keyframes ghurvai{
+    0%{transform: rotate(0);}
+    50%{transform: rotate(10deg);}
+   70%{transform: rotate(0);transition: ease-in-out;}
+}
+
+/*========================  gallery Part css goes here =================*/
+
+#gallery{
+    padding-top: 50px;
+}
+.gal-item{
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.gal-btn{
+    margin-bottom: 20px;
+}
+
+.gal-btn button{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.btn-green{
+    transition: all linear .3s;
+}
+.btn-green {
+    border: 1px solid #03581f;;
+    color: rgb(0, 0, 0);
+    transition: all linear .3s;
+}
+
+.btn-green:hover{
+    color: #44bd32;
+}
+
+
+.gal-overlay{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 148, 50,0.5);
+    transform: translateY(0.8);
+    transition: all linear .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gal-over-2{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 148, 50,0.5);
+    transform: translateY(0.8);
+    transition: all linear .3s;
+}
+
+.gal-item:hover .gal-overlay{
+    transform: translateY(1);
+    height: 0;
+}
+.gal-item:hover .gal-overlay-main{
+    transform: translateY(1);
+    opacity: 1;
+}
+
+.gal-item:hover .gal-over-2{
+    transform: translateY(1);
+    height: 0;
+}
+
+
+.gal-item:hover .gal-overlay .fa-plus{
+    opacity: 1;
+    margin-bottom: -50%;
+}
+
+.middle-icon{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.middle-icon i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color:#009432;
+    color: #fff;
+    font-size: 20px;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.gal-item:hover .middle-icon i{
+    opacity: 1;
+}
+/*========================  Service Part css goes here =================*/
+
+
+#service{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.service-head{
+    margin-bottom: 40px;
+}
+.service-head h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #9dcb03;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.service-head h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #444;
+    font-weight: 600;
+    text-transform:capitalize;
+    position: relative;
+}
+
+.service-head h3::before{
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 8px;
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%);
+    background: url(../images/before.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.service-head h3::after{
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 8px;
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+    background: url(../images/after.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-item{
+    border: 1px solid rgba(68, 68, 68, 0.2);
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.service-item::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #9dca00;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.service-item:hover::before{
+    opacity: 1;
+    width: 100%;
+}
+.service-bottom{
+    padding: 20px;
+}
+.service-bottom h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #444;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.service-bottom p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #444;
+    line-height: 24px;
+    padding: 0 10px;
+    padding-left: 0;
+}
+
+.service-img{
+    height: 268px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transform: rotateY(0);
+    transition: all linear .3s;
+    position: relative;
+}
+.service-content{
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 268px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: rotateY(90deg);
+    transition: all linear .3s;
+}
+
+.service-item:hover .service-content{
+    transform: rotateY(0);
+}
+.service-item:hover .service-img{
+    transform: rotateY(-90deg);
+}
+
+.service-content h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.service-content p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 18px;
+}
+.service-icon i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #e7eaee;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 50%;
+    transition: all linear .3s;
+}
+
+.service-icon{
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    transition: all linear .3s;
+}
+
+.service-item:hover .service-icon{
+    left: 80%;
+}
+
+.service-item:hover .service-icon i{
+    background-color: #9dca00;
+    color: #fff;
+}
+
+/*======================== Pricing css goes here =================*/
+#pricing{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.pricing-head{
+    margin-bottom: 30px;
+}
+.pricing-head h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #444;
+    font-weight: 600;
+    text-transform:capitalize;
+    position: relative;
+}
+
+
+ .pricing-head h3::before{
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 8px;
+    top: 50%;
+    left: -70px;
+    transform: translateY(-50%);
+    background: url(../images/before.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pricing-head h3::after{
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 8px;
+    top: 50%;
+    right: -60px;
+    transform: translateY(-50%);
+    background: url(../images/after.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pricing-item{
+    border: 1px solid rgb(211, 211, 211);
+    margin-top: 60px;
+    position: relative;
+    transition: all linear .3s;
+}
+
+.pricing-img{
+    position: relative;
+}
+
+.pricing-img::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 148, 50,0.4);
+    z-index: -1;
+}
+.pricing-text h5{
+    margin-top: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 0;
+}
+.pricing-text span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.pricing-text h6{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.pricing-text{
+    width: 100px;
+    height: 100px;
+    background-color: #009432;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    position: absolute;
+    top: -20px;
+    left:-10px;
+    z-index: 999;
+}
+
+.pricing-text::after{
+    position: absolute;
+    content: '';
+    width: 110px;
+    height: 110px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%!important;
+    line-height:110px;
+    border: 1px solid #ffffff;
+    z-index: -1;
+}
+.pricing-text::before{
+    position: absolute;
+    content: '';
+    width: 110px;
+    height: 110px;
+    top: 50%;
+    left: 60px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%!important;
+    line-height:110px;
+    background:#2faa1c;
+    z-index: -1;
+}
+
+.pricing-icon{
+    margin-top: -50px;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.pricing-item:hover .pricing-icon{
+    opacity: 1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.pricing-icon i{
+    width: 50px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: #009432;
+    line-height:50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.price-offer h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.price-offer del{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(90, 90, 90);
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 10px;
+    position: relative;
+}
+
+
+.price-offer{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 0;
+    padding: 20px;
+    background-color: #02fd2452;
+}
+/*======================== vedio css goes here =================*/
+
+#vedio{
+    padding-bottom: 50px;
+}
+.vedio-img{
+    background: url(../images/vedio-banner.jpg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 100vh;
+     position: relative;
+ }
+
+.vid-overlay{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     background-color:rgba(0, 0, 0, 0.5) ;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .vid-overlay i{
+     width: 100px;
+     height: 100px;
+     line-height: 100px;
+     text-align: center;
+     background-color: #1c720f;
+     color: #fff;
+     font-size: 50px;
+     border-radius: 50%;
+ }
+
+/*======================== feedback css goes here =================*/
+#feedback{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url(../images/feedback-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+#feedback::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.feed-comment{
+    position: relative;
+    z-index: 999999;
+}
+
+.feed-img{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.feed-img::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.feed-text{
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.feed-text p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 26px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.feed-text span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.feed-text h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+/*======================== newsletter css goes here =================*/
+ .from-head{
+     margin-top: 200px;
+ }
+
+ .from-head h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #444;
+    font-weight: 600;
+    padding-bottom: 20px;
+ }
+ .from-head p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #444;
+    font-weight: 500;
+    padding-bottom: 10px;
+ }
+
+ form input{
+     width: 100%;
+     height:50px;
+     border-radius: 5px;
+ }
+
+ .form-btn{
+     margin-top: 20px;
+ }
+.form-field{
+    position: relative;
+}
+
+.form-field button{
+     position: absolute;
+     top: -70px;
+     right: 0;
+     border: none;
+     padding: 12px 30px;
+     background-color: yellowgreen;
+     border-radius:0px 5px 5px 0px;
+     color: #fff;
+     text-transform: uppercase;
+     font-weight: 600;
+     z-index: 99999999;
+ }
+/*======================== footer css goes here =================*/
+
+#footer{
+    padding-top: 30px;
+    background-color: #0a3603;
+    padding-bottom: 30px;
+}
+
+.footer-first-part img{
+    padding-bottom: 20px;
+}
+.footer-first-part p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(201, 201, 201);
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.footer-social i{
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #44bd32;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
+    transition: all linear .3s;
+}
+
+.footer-social i:hover{
+    border: 1px solid #44bd32;
+    background-color:transparent;
+}
+
+.footer-first-part h3{
+    margin-top:18px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: rgb(201, 201, 201);
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.footer-first-part h5 a{
+    margin-top:14px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(201, 201, 201);
+    font-weight:400;
+    text-transform: capitalize;
+}
+/*======================== back to top css goes here =================*/
+
+.back-to-top i{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #05a80e;
+    line-height: 40px;
+    text-align: center;
+    color: #05a80e;
+    font-size: 20px;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 999999999;
+    display: none;
+    cursor: pointer;
+}
+
+.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+   opacity: 0;
+	display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@300;400;500;600;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-offset="100">
+
+<!--------------------------------Side bar goes here---------------->
+
+<div class="sidebar">
+  <div class="side-logo text-center">
+    <img src="images/Logo.png" alt="Logo">
+  </div>
+    <div class="menu-silde-bar text-center">
+      <a href="#">Home</a>
+    <a href="#">about</a>
+    <a href="#">service</a>
+    <a href="#">Pricing</a>
+    <a href="#">Gallery</a>
+    <a href="#">contact</a>
+    </div>
+    <div class="social-side-bar">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-behance"></i>
+    </div>
+    <i class="fa fa-bars fa-close side-click"></i>
+</div>
+
+<!--------------------------------nav bar goes here---------------->
+<nav id="nav-bar" class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+          <img src="images/Logo.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#banner">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutus">about us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Items</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<!--------------------------------banner goes here---------------->
+<section id="banner">
+    <div class="banner-slider">
+        <div class="banner-item" style="background: url(images/banner-1.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="banner-content d-flex justify-centent-left align-items-center">
+                            <div class="content">
+                                <h1>Shopping <span class="typed"></span></h1>
+                                <p>My Super Shop is an e-commerce platform that provides the facility to purchase different imported grocery items in Bangladesh.</p>
+                                <button class="btn1">Shop Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="banner-item" style="background: url(images/banner-2.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="banner-content d-flex justify-centent-left align-items-center">
+                            <div class="content">
+                              <h1>Shopping <span class="typed"></span></h1>
+                              <p>My Super Shop is an e-commerce platform that provides the facility to purchase different imported grocery items in Bangladesh.</p>
+                              <button class="btn1">Shop Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!--------------------------------About us bar goes here---------------->
+<section id="aboutus">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 m-auto">
+        <div class="comon-head text-center wow slideInLeft">
+          <h3>About us</h3>
+          <p>My Super Shop has started its journey from 2019. From the very beginning, My Super Shop has invested its effort to ensure healthy food at the doorstep of city</p>
+        </div>
+      </div>
+    </div>
+    <div class="row about-main">
+      <div class="col-lg-6">
+        <div class="about-img">
+          <img src="images/about us.jpg" alt="about us" class="img-fluid w-100">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="about-text">
+          <div class="about-head text-start">
+            <h2 class="abt-head">We Belive in quality</h2>
+            <h3>Fresh Products Right To Your Door</h3>
+            <p class="abt-details">Organically grown crops tend to use natural fertilizers like manure to improve plant growth. Animals raised organically are also not given antibiotic organic hormones most commonly purchased organic .</p>
+            <p>Organically grown crops tend to use natural fertilizers like manure to improve plant growth. Animals raised organically are also not given antibiotic organic hormones most commonly purchased organic</p>
+            <button class="btn1 btn2">Read More...</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--------------------------------Gallery part goes here---------------->
+<section id="gallery">
+   <div class="container gal-main">
+     <div class="row">
+       <div class="col-lg-12">
+         <div class="gal-btn text-center">
+          <button type="button" class="btn btn-green" data-filter="all">all</button>
+          <button type="button" class="btn btn-green" data-filter=".cokies">cokies</button>
+          <button type="button" class="btn btn-green" data-filter=".fish">fish</button>
+          <button type="button" class="btn btn-green" data-filter=".vegetalbes">vegetalbes</button>
+          <button type="button" class="btn btn-green" data-filter=".fruit">fruit</button>
+          <button type="button" class="btn btn-green" data-filter=".perfumes">perfumes</button>
+          <button type="button" class="btn btn-green" data-filter=".shop-insides">shop insides</button>
+         </div>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-lg-3 mix cokies">
+         <div class="gal-item">
+           <img src="images/gallery/coki/coki-1.jpg" alt="coki-1" class="img-fluid w-100">
+           <div class="gal-overlay">
+           </div>
+           <div class="gal-over-2"></div>
+           <div class="middle-icon">
+            <a class="venobox" data-gall="myGallery" href="images/gallery/coki/coki-1.jpg"><img src="" />
+              <i class="fa fa-plus"></i>
+            </a>
+           </div>
+         </div>
+       </div>
+       <div class="col-lg-3 mix fish">
+         <div class="gal-item">
+           <img src="images/gallery/fish/fish-1.jpg" alt="fish-1" class="img-fluid w-100">
+           <div class="gal-overlay">
+          </div>
+          <div class="gal-over-2"></div>
+          <div class="middle-icon">
+           <a class="venobox" data-gall="myGallery" href="images/gallery/fish/fish-1.jpg"><img src="" />
+             <i class="fa fa-plus"></i>
+           </a>
+          </div>
+         </div>
+       </div>
+       <div class="col-lg-3 mix vegetalbes">
+         <div class="gal-item">
+           <img src="images/gallery/fruit/fruit-2.jpg" alt="fruit-2" class="img-fluid w-100">
+           <div class="gal-overlay"></div>
+          <div class="gal-over-2"></div>
+          <div class="middle-icon">
+           <a class="venobox" data-gall="myGallery" href="images/gallery/fruit/fruit-2.jpg"><img src="" />
+             <i class="fa fa-plus"></i>
+           </a>
+          </div>
+         </div>
+       </div>
+       <div class="col-lg-3 mix fruit">
+         <div class="gal-item">
+           <img src="images/gallery/inside/shop-3.jpg" alt="shop-3" class="img-fluid w-100">
+           <div class="gal-overlay"></div>
+           <div class="gal-over-2"></div>
+           <div class="middle-icon">
+            <a class="venobox" data-gall="myGallery" href="images/gallery/inside/shop-3.jpg"><img src="" />
+              <i class="fa fa-plus"></i>
+            </a>
+           </div>
+         </div>
+       </div>
+       <div class="col-lg-3 mix perfumes">
+         <div class="gal-item">
+           <img src="images/gallery/perfu/per-1.jpg" alt="per-1" class="img-fluid w-100">
+           <div class="gal-overlay"></div>
+           <div class="gal-over-2"></div>
+           <div class="middle-icon">
+            <a class="venobox" data-gall="myGallery" href="images/gallery/perfu/per-1.jpg"><img src="" />
+              <i class="fa fa-plus"></i>
+            </a>
+           </div>
+         </div>
+       </div>
+       <div class="col-lg-3 mix shop-insides">
+         <div class="gal-item">
+           <img src="images/gallery/vegie/vegie-4.jpg" alt="vegie-4" class="img-fluid w-100">
+           <div class="gal-overlay"></div>
+           <div class="gal-over-2"></div>
+           <div class="middle-icon">
+            <a class="venobox" data-gall="myGallery" href="images/gallery/vegie/vegie-4.jpg"><img src="" />
+              <i class="fa fa-plus"></i>
+            </a>
+           </div>
+         </div>
+       </div>
+       <div class="col-lg-3 mix vegetalbes">
+         <div class="gal-item">
+           <img src="images/gallery/coki/coki-7.jpg" alt="coki-7" class="img-fluid w-100">
+           <div class="gal-overlay"></div>
+           <div class="gal-over-2"></div>
+           <div class="middle-icon">
+            <a class="venobox" data-gall="myGallery" href="images/gallery/coki/coki-7.jpg"><img src="" />
+              <i class="fa fa-plus"></i>
+            </a>
+           </div>
+         </div>
+       </div>
+       <div class="col-lg-3 mix fish">
+         <div class="gal-item">
+           <img src="images/gallery/fruit/fruit-8.jpg" alt="fruit-8" class="img-fluid w-100">
+           <div class="gal-overlay"></div>
+           <div class="gal-over-2"></div>
+           <div class="middle-icon">
+            <a class="venobox" data-gall="myGallery" href="images/gallery/coki/coki-7.jpg"><img src="" />
+              <i class="fa fa-plus"></i>
+            </a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+</section>
+
+<!--------------------------------service part goes here---------------->
+<section id="service">
+  <div class="container">
+    <div class="row">
+     <div class="col-lg-6 m-auto">
+       <div class="service-head text-center wow slideInLeft">
+         <h5>What We Offer</h5>
+         <h3>Service we offer</h3>
+       </div>
+     </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="service-item">
+          <div class="service-img">
+            <img src="images/service-1.jpg" alt="service-1" class="img-fluid w-100">
+          </div>
+          <div class="service-bottom">
+            <h4>vegetables collections</h4>
+            <p>Bangladeshi origin are most important source of starch, mostly used as vegetables also in potato crackers, salad,  Barbecue etc.Potato, naturally rich tuberous root vegetable, is a good source of starch and fiber. It is one of the most widely grown  crops</p>
+          </div>
+          <div class="service-icon">
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <div class="service-content text-center d-flex justify-centent-center align-items-center">
+            <div class="content-last">
+              <h4>Fresh Vegetables</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iusto sint nesciunt nam atque officiis quo, deleniti fugiat cumque sapiente?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="service-item">
+          <div class="service-img">
+            <img src="images/service-2.jpg" alt="service-2" class="img-fluid w-100">
+          </div>
+          <div class="service-bottom">
+            <h4>vegetables collections</h4>
+            <p>Bangladeshi origin are most important source of starch, mostly used as vegetables also in potato crackers, salad,  Barbecue etc.Potato, naturally rich tuberous root vegetable, is a good source of starch and fiber. It is one of the most widely grown  crops</p>
+          </div>
+          <div class="service-icon">
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <div class="service-content text-center d-flex justify-centent-center align-items-center">
+            <div class="content-last">
+              <h4>Fresh Vegetables</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iusto sint nesciunt nam atque officiis quo, deleniti fugiat cumque sapiente?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="service-item">
+          <div class="service-img">
+            <img src="images/service-3.jpg" alt="service-3" class="img-fluid w-100">
+          </div>
+          <div class="service-bottom">
+            <h4>vegetables collections</h4>
+            <p>Bangladeshi origin are most important source of starch, mostly used as vegetables also in potato crackers, salad,  Barbecue etc.Potato, naturally rich tuberous root vegetable, is a good source of starch and fiber. It is one of the most widely grown  crops</p>
+          </div>
+          <div class="service-icon">
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <div class="service-content text-center d-flex justify-centent-center align-items-center">
+            <div class="content-last">
+              <h4>Fresh Vegetables</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iusto sint nesciunt nam atque officiis quo, deleniti fugiat cumque sapiente?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--------------------------------Pricing goes here---------------->
+<section id="pricing">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 m-auto">
+        <div class="pricing-head text-center wow slideInLeft">
+          <h3>featured product</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="pricing-item">
+          <div class="pricing-img">
+            <img src="images/Tomato.png" alt="Tomato" class="img-fluid w-100">
+          </div>
+          <div class="price-offer text-center">
+            <h5>price $20.00 <del>$10.00</del></h5>
+          </div>
+          <div class="pricing-icon text-center">
+         <a href="">
+          <i class="fa fa-shopping-cart"></i>
+          <i class="fa fa-heart-o"></i>
+          <i class="fa fa-plus"></i>
+         </a>
+          </div>
+          <div class="pricing-text d-flex justify-centent-center align-items-center">
+            <div class="text-area m-auto">
+              <h5>Discount</h5>
+              <span>up to</span>
+             <h6>60%</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="pricing-item">
+          <div class="pricing-img">
+            <img src="images/fish.png" alt="fish" class="img-fluid w-100">
+          </div>
+          <div class="price-offer text-center">
+            <h5>price $20.00 <del>$10.00</del></h5>
+          </div>
+          <div class="pricing-icon text-center">
+         <a href="">
+          <i class="fa fa-shopping-cart"></i>
+          <i class="fa fa-heart-o"></i>
+          <i class="fa fa-plus"></i>
+         </a>
+          </div>
+          <div class="pricing-text d-flex justify-centent-center align-items-center">
+            <div class="text-area m-auto">
+              <h5>Discount</h5>
+              <span>up to</span>
+             <h6>70%</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="pricing-item">
+          <div class="pricing-img">
+            <img src="images/vegie.png" alt="vegie" class="img-fluid w-100">
+          </div>
+          <div class="price-offer text-center">
+            <h5>price $20.00 <del>$10.00</del></h5>
+          </div>
+          <div class="pricing-icon text-center">
+         <a href="">
+          <i class="fa fa-shopping-cart"></i>
+          <i class="fa fa-heart-o"></i>
+          <i class="fa fa-plus"></i>
+         </a>
+          </div>
+          <div class="pricing-text d-flex justify-centent-center align-items-center">
+            <div class="text-area m-auto">
+              <h5>Discount</h5>
+              <span>up to</span>
+             <h6>80%</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="pricing-item">
+          <div class="pricing-img">
+            <img src="images/begun.png" alt="begun" class="img-fluid w-100">
+          </div>
+          <div class="price-offer text-center">
+            <h5>price $20.00 <del>$10.00</del></h5>
+          </div>
+          <div class="pricing-icon text-center">
+         <a href="">
+          <i class="fa fa-shopping-cart"></i>
+          <i class="fa fa-heart-o"></i>
+          <i class="fa fa-plus"></i>
+         </a>
+          </div>
+          <div class="pricing-text d-flex justify-centent-center align-items-center">
+            <div class="text-area m-auto">
+              <h5>Discount</h5>
+              <span>up to</span>
+             <h6>40%</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--------------------------------Vedio part goes here---------------->
+<section id="vedio">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="vedio-img">
+       <div class="vid-overlay">
+        <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/8gAlJcuqfzs">
+          <i class="fa fa-play"></i>
+        </a>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>  
+</section>
+
+
+<!--------------------------------feedback goes here---------------->
+
+<section id="feedback">
+  <i class="fa fa-chevron-left left"></i>
+  <i class="fa fa-chevron-right right"></i>
+<div class="container">
+  <div class="row feed-slider">
+    <div class="col-lg-12">
+      <div class="feed-comment">
+        <div class="feed-img m-auto">
+          <img src="images/people.jpg" alt="people" class="img-fluid w-100">
+        </div>
+        <div class="feed-text text-center">
+          <p>Customer Analysis for fresh vegetables and frutis
+            The motive to create this small dataset was to get the survey of people on how would they accept the service of getting fresh vegetables and fruits of a particular place and that to at the same market price.</p>
+            <span>Sohel</span> 
+            <h6>Happy Customer</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="feed-comment">
+        <div class="feed-img m-auto">
+          <img src="images/people2.jpg" alt="people2" class="img-fluid w-100">
+        </div>
+        <div class="feed-text text-center">
+          <p>Customer Analysis for fresh vegetables and frutis
+            The motive to create this small dataset was to get the survey of people on how would they accept the service of getting fresh vegetables and fruits of a particular place and that to at the same market price.</p>
+            <span>David</span> 
+            <h6>Happy Customer</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="feed-comment">
+        <div class="feed-img m-auto">
+          <img src="images/people3.jpg" alt="people3" class="img-fluid w-100">
+        </div>
+        <div class="feed-text text-center">
+          <p>Customer Analysis for fresh vegetables and frutis
+            The motive to create this small dataset was to get the survey of people on how would they accept the service of getting fresh vegetables and fruits of a particular place and that to at the same market price.</p>
+            <span>Jack</span> 
+            <h6>Happy Customer</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<!--------------------------------newsletter goes here---------------->
+<section>
+  <div class="row mx-0">
+    <div class="col-lg-4">
+      <div class="news-letter-left">
+        <img src="images/vegetables-pic.jpg" alt="vegetables-pic" class="img-fluid w-100">
+      </div>
+    </div>
+    <div class="col-lg-4">
+     <div class="form text-center">
+       <div class="from-head">
+         <h3>Newsletter</h3>
+         <p>Subscribe to the weekly newsletter for all the latest updates</p>
+       </div>
+       <form action="#" method="POST">
+        <div class="form-field">
+          <input type="text" placeholder="">
+        </div>
+        <div class="form-field">
+          <button class="form-btn" type="submit">Subscribe</button>
+        </div>
+       </form>
+     </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="news-letter-left">
+        <img src="images/vegetables-pic.jpg" alt="vegetables-pic" class="img-fluid w-100">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--------------------------------footer goes here---------------->
+<footer id="footer">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3">
+      <div class="footer-first-part text-center">
+        <img src="images/Logo.png" alt="Logo">
+        <p>
+          Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+        </p>
+      </div>
+      <div class="footer-social text-center">
+        <a href="#">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+          <i class="fa fa-behance"></i></a>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="footer-first-part text-center lg-offset-3">
+        <h3>shop info</h3>
+        <h5>
+          <a href="#">About us</a>
+        </h5>
+        <h5>
+          <a href="#">Careers</a>
+        </h5>
+        <h5>
+          <a href="#">Social Responsibility</a>
+        </h5>
+        <h5>
+          <a href="#">Affiliate Program</a>
+        </h5>
+        <h5>
+          <a href="#">Business With Us</a>
+        </h5>
+        <h5>
+          <a href="#">Find a Store</a>
+        </h5>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="footer-first-part text-center mt-3">
+        <h3>Quick Links</h3>
+        <h5>
+          <a href="#">Special Offers</a>
+        </h5>
+        <h5>
+          <a href="#">Gift Cards</a>
+        </h5>
+        <h5>
+          <a href="#">F21 Red</a>
+        </h5>
+        <h5>
+          <a href="#">Privacy Policy</a>
+        </h5>
+        <h5>
+          <a href="#">California Privacy Rights</a>
+        </h5>
+        <h5>
+          <a href="#">CA Transparency in Store</a>
+        </h5>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="footer-first-part text-center">
+        <h3>contact us</h3>
+        <h5>
+          <a href="#">
+            Through Whatsapp</a>
+        </h5>
+        <img src="images/call-number.png" alt="call-number">
+        <h5>
+          <a href="#">jessore khulna Bangladesh</a>
+        </h5>
+        <h5>
+          <a href="#">raihanbiswas.dev@gmail.com</a>
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+
+<span class="back-to-top">
+  
+  <i class="fa fa-chevron-up"></i>
+
+</span>
+
+
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
